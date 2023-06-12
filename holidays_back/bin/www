@@ -4,10 +4,13 @@
  * Module dependencies.
  */
 
+require('dotenv').config();
+require('../config/db');
+
 const app = require('../app');
 const debug = require('debug')('holidays-back:server');
 const http = require('http');
-const require('dotenv').config();
+
 
 /**
  * Get port from environment and store in Express.
